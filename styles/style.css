@@ -7,17 +7,26 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    
-  
-    
+      
 }
 .nav-hero{
     background-color: #2D25A0;
+  
 }
 .container{
     width:1160px;
     margin: 0 auto;
 }
+.paragraph{
+    font-size:16px;
+    font-weight: 400;
+    color: #6C6C6C;
+
+}
+a{
+    text-decoration: none;
+}
+
 
 /* nav bar start here */
 
@@ -29,7 +38,6 @@ body{
 } 
 nav span a, .nav-button{
     color: #fff;
-    text-decoration: none;
     font-size:20px;
 }
 .menu{
@@ -38,7 +46,7 @@ nav span a, .nav-button{
 .nav-button{
     background-color: #E02C6D;
     padding: 10px 20px;
-    max-width:140px
+    max-width:150px
 }
 .fa-sign-in-alt {
     margin-right: 10px;
@@ -52,6 +60,7 @@ nav span a, .nav-button{
 .flex-content{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 60px;
 }
 .hero-head-style{
     font-size: 64px;
@@ -59,7 +68,7 @@ nav span a, .nav-button{
     color:#fff;
 }
 
-.hero-img img{
+.hero-img{
     width:100%;
 }
 .hero-content{
@@ -74,6 +83,160 @@ nav span a, .nav-button{
 .fa-arrow-right{
     margin-left: 10px;
 }
+
+/* player section start here */
+
+.players-section{
+    margin-top: 60px;
+}
+
+.players{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
+.player{
+    padding: 20px;
+    box-shadow: 5px 10px 8px #888888b0;
+}
+
+/* copa america section starts */
+.copa-height{
+    height: 241px;
+    margin-top:150px;
+}
+
+.copa-head-style{
+    font-size: 48px;
+    font-weight: 700;
+    
+}
+
+/* otherSports starts here */
+.othersports{
+    margin-top:330px;
+    margin-bottom: 150px;
+  
+}
+.cric-left h2{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.cric-right-content{
+    display: flex;
+    align-items: center;
+   
+}
+.cric-img{
+    width:150;
+    height: 200px;
+}
+.cric-right-desc{
+    margin-left:15px;
+}
+/* footer section start here */
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+.footer-img {
+    width:475px;
+    height: 110px;
+}
+.footer-img img{
+    width:100%;
+}
+
+.footer-icons i{
+    font-size: 32px;
+    color:gray;
+    margin-right: 15px;
+}
+.realfooter p{
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* responsiveness test */
+
+/* Mobile devices */
+
+@media only screen and (max-width:688px){
+    .container{
+        width:100%;
+    }
+    .flex-content{
+        grid-template-columns: repeat(1,1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 50px; 
+    }
+     .hero-height{
+        height: 600px;
+    }
+    .hero-head-style{
+        font-size: 30px;
+    }
+    .hero-content{
+        margin-left: 30px;
+    }
+    /* players section */
+    .players{
+
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    /* othersports */
+
+    .othersports{
+       
+        margin:630px 30px 150px;
+      
+    }
+    .footer-img img{
+        width:80%;
+        margin-left:37px;
+
+    }
+    footer{
+        margin-left:100px
+    }
+    
+   
+}
+
+/* For pads we can starts */
+
+@media only screen and (min-width:689px) and (max-width:992px){
+    .container{
+        width:100%;
+         margin-left:20px;
+        margin-right:20px; 
+    }
+    .players{
+
+        grid-template-columns: repeat(2,1fr);
+        margin-right: 20px;
+
+    }
+    .hero-img{
+        width:97%;
+    }
+   .othersports{
+       margin-bottom: 50px;
+   }
+   
+    
+}
+
+
+
+
+
+
 
 
 
